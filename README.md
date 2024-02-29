@@ -51,6 +51,7 @@ The OpenAndClosedWorm - Movement Analysis Tool is a Python-based application for
 
 ## File structure
 
+```
 movement_analysis_tool/
 │
 ├── app.py                 # Flask application
@@ -71,7 +72,7 @@ movement_analysis_tool/
 │
 └── templates/             # Directory for HTML templates
     └── index.html         # Main HTML template for the web interface
-
+```
 
 ## Contributing
 
