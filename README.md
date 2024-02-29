@@ -2,7 +2,7 @@
 
 ## Movement Analysis Tool
 
-The Movement Analysis Tool is a Python-based application for analyzing and visualizing movement data of C. elegans worms. This tool is developed as part of the OpenWorm project's movement analysis initiative to validate the C. elegans model using real worm movement data.
+The OpenAndClosedWorm - Movement Analysis Tool is a Python-based application for analyzing and visualizing movement data of C. elegans worms. This tool is developed as part of the OpenWorm project's movement analysis initiative to validate the C. elegans model using real worm movement data.
 
 ## Features
 
@@ -17,8 +17,8 @@ The Movement Analysis Tool is a Python-based application for analyzing and visua
 1. Clone the repository:
 
    ```bash
-   git clone <repository_url>
-   cd movement_analysis_tool
+   git clone https://github.com/HussainAther/OpenAndClosedWorm
+   cd OpenAndClosedWorm
    ```
 
 2. Set up a Python virtual environment:
@@ -48,6 +48,30 @@ The Movement Analysis Tool is a Python-based application for analyzing and visua
 2. Choose analysis options and parameters.
 3. Visualize movement patterns and analysis results.
 4. Export analysis results for further exploration or sharing.
+
+## File structure
+
+movement_analysis_tool/
+│
+├── app.py                 # Flask application
+├── requirements.txt       # Python dependencies
+│
+├── data/                  # Directory for storing data files
+│   └── sample_data.csv    # Sample data file (can be replaced with actual data)
+│
+├── models/                # Directory for storing trained models (if applicable)
+│
+├── scripts/               # Directory for additional Python scripts (if needed)
+│
+├── static/                # Directory for static assets (e.g., CSS, JavaScript)
+│   ├── js/
+│   │   └── main.js        # Frontend JavaScript code
+│   └── css/
+│       └── style.css      # CSS stylesheets (if needed)
+│
+└── templates/             # Directory for HTML templates
+    └── index.html         # Main HTML template for the web interface
+
 
 ## Contributing
 
