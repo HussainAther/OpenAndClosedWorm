@@ -1,29 +1,58 @@
 # OpenAndClosedWorm
 
-Goal: Develop a prototype of a data analysis and visualization tool tailored to the needs of the OpenWorm community, with basic functionality for importing, exploring, and visualizing experimental data related to C. elegans behavior.
+## Movement Analysis Tool
 
-Week 1-2: Requirements Gathering and Design
+The Movement Analysis Tool is a Python-based application for analyzing and visualizing movement data of C. elegans worms. This tool is developed as part of the OpenWorm project's movement analysis initiative to validate the C. elegans model using real worm movement data.
 
-Engage with the OpenWorm Community: Reach out to researchers, developers, and contributors within the OpenWorm community to gather requirements and feedback regarding the desired features and functionality of the tool.
+## Features
 
-Define User Stories and Use Cases: Based on the feedback received, define a set of user stories and use cases that capture the core requirements and workflows supported by the tool.
+- Analyze and visualize movement data of C. elegans worms.
+- Implement machine learning algorithms for movement pattern recognition.
+- Leverage transfer learning techniques for cross-species comparison and validation.
+- Integrate with the Geppetto Simulation Engine for interactive simulation visualization.
+- Web-based user interface for easy access and visualization of analysis results.
 
-Design Tool Architecture: Design the architecture of the tool, including its user interface, data storage, and processing components. Consider scalability, modularity, and extensibility to accommodate future enhancements.
+## Installation
 
-Week 3-4: Development and Implementation
+1. Clone the repository:
 
-Implement Core Functionality: Begin development of the tool, focusing on implementing the core functionality outlined in the user stories. This may include features for data import, exploration, visualization, and basic analysis.
+   ```bash
+   git clone <repository_url>
+   cd movement_analysis_tool
+   ```
 
-Prototype User Interface: Design and implement a prototype user interface for the tool, ensuring it is intuitive, responsive, and user-friendly. Incorporate feedback from usability testing to refine the interface design.
+2. Set up a Python virtual environment:
 
-Integrate Data Sources: Develop functionality to import and integrate experimental data sets relevant to C. elegans behavior, including imaging data, electrophysiological recordings, genetic data, and behavioral annotations.
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # Activate the virtual environment
+   ```
 
-Week 5-6: Testing, Documentation, and Iteration
+3. Install dependencies:
 
-Conduct Testing and Validation: Conduct thorough testing of the tool to ensure reliability, performance, and accuracy. Test the tool with sample datasets and real-world use cases to identify and address any issues or bugs.
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Document Tool Usage: Create comprehensive documentation for the tool, including installation instructions, usage guidelines, and examples. Provide clear explanations of features and workflows to help users get started with the tool.
+4. Run the application:
 
-Solicit Feedback and Iterate: Share the prototype tool with the OpenWorm community and solicit feedback from users. Incorporate feedback and suggestions to iteratively improve the tool's functionality, usability, and performance.
+   ```bash
+   python app.py
+   ```
 
-End Goal: By the end of the 26-day period, the goal is to have a functional prototype of the data analysis and visualization tool that meets the core requirements identified through requirements gathering and user feedback. The prototype should be capable of importing, exploring, and visualizing experimental data related to C. elegans behavior, providing a valuable resource for researchers and contributors within the OpenWorm project.
+5. Access the application in your web browser at `http://localhost:5000`.
+
+## Usage
+
+1. Upload movement data files in CSV format.
+2. Choose analysis options and parameters.
+3. Visualize movement patterns and analysis results.
+4. Export analysis results for further exploration or sharing.
+
+## Contributing
+
+Contributions to the Movement Analysis Tool project are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request on GitHub.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
