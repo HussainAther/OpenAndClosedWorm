@@ -6,6 +6,11 @@ import matplotlib.pyplot as plt
 app = Flask(__name__)
 
 @app.route('/')
+def home():
+    # This route will serve the index.html file, where the visualization will be displayed.
+    return render_template('index.html')
+
+@app.route('/')
 def index():
     return render_template('index.html')
 
@@ -26,5 +31,5 @@ def analyze_data():
     return jsonify({'message': 'Analysis completed'})
 
 if __name__ == '__main__':
-    app.run(debug=True)
-
+    app.run(debug=True, port=5000)
+  
